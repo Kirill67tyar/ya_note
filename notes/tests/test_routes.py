@@ -45,7 +45,8 @@ class TestRoutes(TestCase):
                 self.assertEqual(
                     status_code,
                     self.STATUS_OK,
-                    msg=f'Получили статус код {status_code}, Ожидаемый статус код 200'
+                    msg=(f'Получили статус код {status_code},'
+                         'Ожидаемый статус код 200')
                 )
 
     def test_pages_availability_for_different_users(self):
@@ -104,7 +105,7 @@ class TestRoutes(TestCase):
 
     def test_redirects(self):
         """
-        Тест редиректа страницы: просмотра списка/одной, создания, 
+        Тест редиректа страницы: просмотра списка/одной, создания,
         изменения, удаления, для анонимному пользователю.
         """
         # arrange

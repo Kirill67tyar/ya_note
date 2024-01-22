@@ -86,7 +86,10 @@ class TestLogic(TestCase):
         self.assertEqual(Note.objects.count(), 1)
 
     def test_empty_slug(self):
-        """Тест на то, что слаг может создаться автоматически и он правильный."""
+        """
+        Тест на то, что слаг может создаться автоматически
+        и он правильный.
+        """
         # arrange
         del self.form_data['slug']
         # action

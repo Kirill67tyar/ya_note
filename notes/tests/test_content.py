@@ -25,7 +25,7 @@ class TestContent(TestCase):
 
     def test_notes_list_for_different_users(self):
         """
-        Тест, заметка доступна только её автору, 
+        Тест, заметка доступна только её автору,
         и она есть в конексте, в списке object_list.
         """
         # arrange
